@@ -1,0 +1,22 @@
+{
+  "name": "restapi",
+  "version": "1.0.0",
+  "description": "A REST API created in Node.js to demonstrate in Mobile Application Development CS4S763",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/foyezullahnishan/MovieAPI.git"
+  },
+  "author": "Foyez Nishan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/foyezullahnishan/MovieAPI/issues"
+  },
+  "homepage": "https://github.com/foyezullahnishan/MovieAPI#readme",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
