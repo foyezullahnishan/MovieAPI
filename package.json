@@ -2,10 +2,12 @@
   "name": "restapi",
   "version": "1.0.0",
   "description": "A REST API created in Node.js to demonstrate in Mobile Application Development CS4S763",
-  "main": "index.js",
+  "main": "server.js",
   "type": "module",
   "scripts": {
-    "start": "node app.js"
+    "start": "node app.js",
+    "test": "jest --detectOpenHandles",
+    "seed": "node seed.js"
   },
   "repository": {
     "type": "git",

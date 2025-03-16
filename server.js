@@ -1,8 +1,16 @@
-// app.js
+// server.js
 const express = require('express');
-const cors = require('cors');
+const dotenv = require('dotenv');
 const morgan = require('morgan');
+const cors = require('cors');
+const connectDB = require('./config/db');
 const { errorHandler } = require('./middleware/errorMiddleware');
+
+// Load environment variables
+dotenv.config();
+
+// Connect to database
+connectDB();
 
 // Initialize Express
 const app = express();
@@ -22,4 +30,10 @@ app.use('/api/genres', require('./routes/genreRoutes'));
 // Error handler
 app.use(errorHandler);
 
-module.exports = app;
+// Start server
+const PORT = process.env.PORT || 5001;
+const server = app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
+});
+
+module.exports = { app, server };
