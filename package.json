@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "A REST API created in Node.js to demonstrate in Mobile Application Development CS4S763",
   "main": "server.js",
-  "type": "module",
   "scripts": {
     "start": "node app.js",
     "test": "jest --detectOpenHandles",
@@ -20,8 +19,10 @@
   },
   "homepage": "https://github.com/foyezullahnishan/MovieAPI#readme",
   "dependencies": {
+    "axios": "^1.8.3",
     "bcrypt": "^5.1.1",
     "bcryptjs": "^3.0.2",
+    "dotenv": "^16.4.7",
     "express": "^4.21.2",
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.12.1"
