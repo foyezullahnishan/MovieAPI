@@ -35,7 +35,7 @@ A RESTful API for managing a movie database with movies, directors, actors, and 
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/movie-database-api.git
+git clone https://github.com/foyezullahnishan/MovieAPI.git
 
 # Navigate to project directory
 cd movie-database-api
@@ -121,6 +121,14 @@ This will create:
 Default credentials:
 - Admin: admin@example.com / admin123
 - User: user@example.com / user123
+
+Populate the database with The Movie Database(TMDd) API:
+
+```bash
+# Run the seed script
+node scripts/importMovies.js
+```
+This will add a list of 20 movies data by default.
 
 ## API Endpoints
 
